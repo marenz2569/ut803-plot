@@ -330,7 +330,7 @@ def main():
         logging.info('Writing to file "{}"'.format(file_name))
         header = "timestamp;{}\n".format(";".join(CSV_FIELDS))
         output_file.write(header)
-    elif args.mode == 'chch':
+    elif args.mode == 'plot':
         if args.file:
             file_name = args.file
         else:
